@@ -1,0 +1,69 @@
+// Object Methods and Display the result in JS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods in JS</title>
+</head>
+<body>
+    <h1>Object methods in js used to store variable and store attribute</h1>
+    <p id="demo"></p>
+    <script>
+        const person = {
+            id:101,
+            firstname:"PHAL OFFICIAL HD",
+            lastname:"SAM",
+            gender:"Male",
+            address:"Kandal",
+            Fullname : function(){
+                return this.lastname+" "+this.firstname;
+            }
+        };
+
+        document.getElementById("demo").innerHTML=person.Fullname();
+    </script>
+    <h2>Object Methods part2</h2>
+    <p id="demo1"></p>
+    <script>
+        const people = {
+            department:"IT",
+            Major:"Software Development IT Programming",
+            Qty:30,
+            Price:750,
+
+            ComponentDepartment : function(){
+                return this.department+Major;   
+            }
+        };
+
+        document.getElementById("demo1").innerHTML=people.ComponentDepartment();
+    </script>
+
+    <h3>Object Display and Object Methods</h3>
+    <p id="demo2"></p>
+    <script>
+        function test(){
+            salary = 500;
+            rate = 100;
+        };
+        let result = this.salary+this.rate;
+
+        document.getElementById("demo2").innerHTML=result();
+    </script>
+    <h1>object methods and display</h1>
+    <p id="demo3"></p>
+    <script>
+        const peoples = {
+            salary:500,
+            rate:300,
+
+            Total :function(){
+                return this.salary+this.rate;
+            }
+        };
+        document.getElementById("demo3").innerHTML=people.Price+peoples.rate;
+    </script>
+
+</body>
+</html>

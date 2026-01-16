@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor in JS</title>
+</head>
+<body>
+    <h1>Object Constructor In JS</h1>
+    <p id="demo"></p>
+    <script>
+        function Person(){
+            name="Sophal";
+            age=20;
+            function Person(name, age){
+                this.name=name;
+                this.age=age;
+            };
+
+            const person1 = new Person("PHAL",20);
+            const person2 = new Person("PHEA",30);
+
+            // Display the result
+
+            console.log("Name of Person (1):"+person1.name);
+            console.log("Age of Person (1):"+person1.age);
+
+            console.log("Name of Person (2):"+person2.name);
+            console.log("Age of Person (2) :"+person2.age);
+        }
+
+        console.log("Name of Person (1):"+person1.name);
+            console.log("Age of Person (1):"+person1.age);
+
+            console.log("Name of Person (2):"+person2.name);
+            console.log("Age of Person (2) :"+person2.age);
+        
+    </script>
+    
+</body>
+</html>

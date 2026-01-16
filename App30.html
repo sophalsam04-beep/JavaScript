@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM IN JS</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button{
+            padding: 10px 30px;
+            font-size: 30px;
+
+        }
+        #counter{
+            margin-top: 20px;
+            font-size: 40px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM IN JS</h1>
+    <button id="clickButton">Click Me!</button>
+    <p id="counter">You click 0 times</p>
+
+    <script>
+
+                    // Iniatializing counter
+        let count=0;
+        let button = document.getElementById("clickButton");
+        let counterText = document.getElementById("counter");
+
+        button.addEventListener("click", () => {
+            count++;
+            counterText.textContent = "Hello I'm studying IT Programming !";
+        });
+    </script>
+</body>
+</html>
